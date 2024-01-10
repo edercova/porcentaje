@@ -27,7 +27,7 @@
         ><input
           type="text"
           placeholder="Ingresa la nota obtenida"
-          class="inputs"
+          class="inputs input1"
           id="num1"
         /><label for="num2">Ingresa la nota maxima:</label
         ><input
@@ -48,7 +48,7 @@
     </div>
     <script>
       function myFunction() {
-        var x, y, z, r, r2, r3, suma, text;
+        var x, y, z, r, r2, r3, suma, resultado, text;
         x = document.getElementById("num1").value;
         y = document.getElementById("num2").value;
         z = document.getElementById("num3").value;
@@ -56,7 +56,8 @@
         r2 = r / 100;
         r3 = z / 5;
         suma = r2 * r3;
-        document.getElementById("sumando").innerHTML = suma + " puntos";
+        resultado = Math.round(suma);
+        document.getElementById("sumando").innerHTML = resultado + " puntos";
         // if (isNaN(x) || isNaN(y)) {
         //   text = "Es necesarios introducir dos números válidos";
         // } else {

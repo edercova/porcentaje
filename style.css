@@ -47,3 +47,13 @@ h1{
     text-align: center;
     margin-top: 4rem;
 }
+.container-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+}
+img{
+    width: 10rem;
+    margin-right: 5rem;
+}

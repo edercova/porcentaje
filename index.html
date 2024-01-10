@@ -27,7 +27,7 @@
         ><input
           type="text"
           placeholder="Ingresa la nota obtenida"
-          class="inputs input1"
+          class="inputs"
           id="num1"
         /><label for="num2">Ingresa la nota maxima:</label
         ><input
@@ -56,7 +56,8 @@
         r2 = r / 100;
         r3 = z / 5;
         suma = r2 * r3;
-        resultado = Math.round(suma);
+        resultado = suma.toFixed(2);
+        // resultado = Math.round(suma);
         document.getElementById("sumando").innerHTML = resultado + " puntos";
         // if (isNaN(x) || isNaN(y)) {
         //   text = "Es necesarios introducir dos números válidos";

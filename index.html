@@ -4,7 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Porcentaje y Puntos</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./logo-con-fondo.png" type="image/x-icon" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body></body>
+  <body>
+    <h1>Calcula tus puntos obtenidos</h1>
+    <div class="container-principal">
+      <div class="container-inputs">
+        <label for="num1">Ingresa la nota obtenida:</label
+        ><input
+          type="text"
+          placeholder="Ingresa la nota obtenida"
+          class="inputs"
+          id="num1"
+        /><label for="num2">Ingresa la nota maxima:</label
+        ><input
+          type="text"
+          placeholder="Ingresa la nota maxima"
+          class="inputs"
+          id="num2"
+        /><label for="porcentaje">Ingresa el porcentaje de la evaluación</label
+        ><input
+          type="text"
+          placeholder="Ingresa el porcentaje de la evaluación"
+          class="inputs"
+          id="num3"
+        />
+        <p id="sumando"></p>
+        <button type="button" onclick="myFunction()">Calcular</button>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var x, y, z, r, r2, r3, suma, text;
+        x = document.getElementById("num1").value;
+        y = document.getElementById("num2").value;
+        z = document.getElementById("num3").value;
+        r = (x * 100) / y;
+        r2 = r / 100;
+        r3 = z / 5;
+        suma = r2 * r3;
+        document.getElementById("sumando").innerHTML = suma + " puntos";
+        // if (isNaN(x) || isNaN(y)) {
+        //   text = "Es necesarios introducir dos números válidos";
+        // } else {
+        //   //si no ponemos parseFloat concatenaría x con y
+        //   suma = parseFloat(x) + parseFloat(y);
+        //   text = suma;
+        // }
+        // document.getElementById("sumando").innerHTML = text;
+      }
+    </script>
+  </body>
 </html>

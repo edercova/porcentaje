@@ -3,13 +3,20 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: brown;
+}
 html{
     font-size: 62.5%;
     font-family: 'Archivo Black', sans-serif;
 }
 
 .container-principal{
-    margin:5rem auto;
+    margin:0.5rem auto;
     width: 38%;
     height: 80%;
     border-radius: 5px;
@@ -51,9 +58,12 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5rem 0;
+    padding: 3rem 0;
 }
 img{
     width: 10rem;
     margin-right: 5rem;
+}
+.container-inputs{
+    margin-top: 2rem;
 }
